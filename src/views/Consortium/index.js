@@ -4,6 +4,7 @@ import "./styles.scss";
 import House from "../../assets/Images/house.png";
 import Car from "../../assets/Images/car.png";
 import Truck from "../../assets/Images/truck.png";
+import Parcel from "../../components/Parcel";
 
 export default function Consortium() {
   return (
@@ -21,6 +22,10 @@ export default function Consortium() {
           <Cards name="Imóveis" value="0,09%" image={House} alt="image-house" />
           <Cards name="Carros" value="0,34%" image={Car} alt="image-car" />
           <Cards name="Pesados" value="0,13%" image={Truck} alt="image-truck" />
+        </div>
+
+        <div className="div-parcel">
+          <Parcel />
         </div>
       </section>
     </div>
