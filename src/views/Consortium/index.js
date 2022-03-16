@@ -1,4 +1,5 @@
 import UpBar from "../../components/UpBar";
+import "./styles.scss"
 
 export default function Consortium() {
   return (
