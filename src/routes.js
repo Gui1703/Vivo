@@ -6,7 +6,7 @@ import Bail from "./views/Bail";
 import Life from "./views/Life";
 import Pet from "./views/Pet";
 import Residential from "./views/Residential";
-import Tavel from "./views/Tavel";
+import Travel from "./views/Travel";
 
 export default function myRoutes() {
   return (
@@ -18,7 +18,7 @@ export default function myRoutes() {
         <Route path="/register" element={<Life />} />
         <Route path="/register" element={<Pet />} />
         <Route path="/register" element={<Residential />} />
-        <Route path="/register" element={<Tavel />} />
+        <Route path="/register" element={<Travel />} />
       </Routes>
     </Router>
   );
