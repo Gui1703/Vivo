@@ -13,12 +13,12 @@ export default function myRoutes() {
     <Router>
       <Routes>
         <Route path="/" element={<Consortium />} />
-        <Route path="/register" element={<Auto />} />
-        <Route path="/register" element={<Bail />} />
-        <Route path="/register" element={<Life />} />
-        <Route path="/register" element={<Pet />} />
-        <Route path="/register" element={<Residential />} />
-        <Route path="/register" element={<Travel />} />
+        <Route path="/auto" element={<Auto />} />
+        <Route path="/bail" element={<Bail />} />
+        <Route path="/life" element={<Life />} />
+        <Route path="/pet" element={<Pet />} />
+        <Route path="/residential" element={<Residential />} />
+        <Route path="/travel" element={<Travel />} />
       </Routes>
     </Router>
   );
