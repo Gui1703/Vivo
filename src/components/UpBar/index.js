@@ -35,7 +35,7 @@ export default function UpBar() {
       </div>
       <div className="tcs">
         <div>Made by:</div>
-        <img src={TCS} alt="logo-tcs" />
+        <img className="logo-tcs" src={TCS} alt="logo-tcs" />
       </div>
     </nav>
   );
