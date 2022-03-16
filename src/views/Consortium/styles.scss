@@ -1,6 +1,47 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Play", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Play", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  background: url(../../assets/Images/backgroundMax.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 625px;
+  height: 137px;
+  margin-top: 78px;
+  margin-left: 321px;
+
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: #660099;
   }
+  p {
+    margin-top: 20px;
+    color: #000000;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+  }
+}
