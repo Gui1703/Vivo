@@ -1,8 +1,7 @@
-import UpBar from "../../components/UpBar";
-
-export default function Pet(){
-    return (
-        <div>
-        </div>
-    )
+export default function Pet() {
+  return (
+    <div>
+      <h1>Pet</h1>
+    </div>
+  );
 }

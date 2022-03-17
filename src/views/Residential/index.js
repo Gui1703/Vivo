@@ -1,8 +1,7 @@
-import UpBar from "../../components/UpBar";
-
-export default function Residential(){
-    return (
-        <div>
-        </div>
-    )
+export default function Residential() {
+  return (
+    <div>
+      <h1>Residential</h1>
+    </div>
+  );
 }

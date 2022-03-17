@@ -1,8 +1,7 @@
-import UpBar from "../../components/UpBar";
-
-export default function Bail(){
-    return (
-        <div>
-        </div>
-    )
+export default function Bail() {
+  return (
+    <div>
+      <h1>Bail</h1>
+    </div>
+  );
 }
