@@ -1,5 +1,4 @@
 import Cards from "../../components/Cards";
-import UpBar from "../../components/UpBar";
 import "./styles.scss";
 import House from "../../assets/Images/house.png";
 import Car from "../../assets/Images/car.png";

@@ -30,23 +30,22 @@ section {
   height: 137px;
   margin-top: 50px;
   margin-left: 221px;
-
-  h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 130%;
-    letter-spacing: 0.04em;
-    color: #660099;
-  }
-  p {
-    margin-top: 5px;
-    color: #000000;
-    line-height: 130%;
-    letter-spacing: 0.04em;
-  }
 }
 
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #660099;
+}
+p {
+  margin-top: 5px;
+  color: #000000;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+}
 
 .cards {
   display: flex;
@@ -58,4 +57,43 @@ section {
   display: flex;
   margin-top: 34px;
   margin-left: 221px;
+}
+
+@media (max-width: 640px) {
+  section {
+    background: url(../../assets/Images/backgroundMin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    // padding-bottom: 70px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.04em;
+    margin-left: 10px;
+  }
 }
