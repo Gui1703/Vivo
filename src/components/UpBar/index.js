@@ -40,7 +40,59 @@ function UpBar() {
       <div className="menu">
         <img className="logo" src={LogoMin} alt="logo-vivo" />
         <img className="logo-tcs" src={TCS} alt="logo-tcs" />
-        <i class="bx bx-menu"></i>
+        <input type="checkbox" id="check" name="check" />
+        <label htmlFor="check" className="lblCheck"><i className="bx bx-menu"/></label>
+        <div className="nav-itens">
+          <div
+            style={styles[0]}
+            className="link"
+            onClick={() => navigateTo("Auto", 0)}
+          >
+            Seguro Auto
+          </div>
+          <div
+            style={styles[1]}
+            className="link"
+            onClick={() => navigateTo("Pet", 1)}
+          >
+            Seguro Pet
+          </div>
+          <div
+            style={styles[2]}
+            className="link"
+            onClick={() => navigateTo("Residential", 2)}
+          >
+            Seguro Residencial
+          </div>
+          <div
+            style={styles[3]}
+            className="link"
+            onClick={() => navigateTo("Travel", 3)}
+          >
+            Seguro Viagem
+          </div>
+          <div
+            style={styles[4]}
+            className="link"
+            onClick={() => navigateTo("Life", 4)}
+          >
+            Seguro Vida
+          </div>
+          <div
+            style={styles[5]}
+            className="link"
+            onClick={() => navigateTo("Bail", 5)}
+          >
+            Seguro Fiança
+          </div>
+          <div
+            style={styles[6]}
+            className="link"
+            onClick={() => navigateTo("", 6)}
+          >
+            Consórcio
+          </div>
+        </div>
       </div>
 
       <nav>
