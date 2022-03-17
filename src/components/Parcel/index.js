@@ -7,7 +7,7 @@ export default function Parcel() {
       <div className="parcel">
         <span>25%</span>
         <p>da parcela reduzida até a contemplação da sua carta de crédito!</p>
-      <img src={People} alt="imagem-people" />
+        <img src={People} alt="imagem-people" />
       </div>
     </>
   );

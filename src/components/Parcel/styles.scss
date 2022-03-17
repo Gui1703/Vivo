@@ -32,3 +32,42 @@
     margin-right: -60px;
   }
 }
+
+@media (max-width: 640px) {
+  .parcel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 189px;
+    background: linear-gradient(273.84deg, #ff9900 -6.34%, #660099 99.75%);
+    border-radius: 10px;
+    color: #ffffff;
+
+    span {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 150%;
+      letter-spacing: 0.04em;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      letter-spacing: 0.04em;
+      width: 110px;
+      height: 80px;
+      margin-top: -30px;
+    }
+
+    img {
+      width: 70.01px;
+      height: 79.11px;
+      margin-bottom: 0px;
+      margin-left: 70px;
+    }
+  }
+}
