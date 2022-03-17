@@ -67,7 +67,7 @@ img {
 span {
   font-size: 35px;
   padding-top: 5px;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
 }
 
 @media (max-width: 640px) {
@@ -136,6 +136,7 @@ margin-top: -20px;
   }
   span {
     font-size: 20px;
-    margin-bottom: -10px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
   }
 }
