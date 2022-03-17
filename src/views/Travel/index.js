@@ -1,7 +1,8 @@
+import UpBar from "../../components/UpBar";
+
 export default function Travel(){
     return (
         <div>
-            <h1>Travel</h1>
         </div>
     )
 }

@@ -19,13 +19,13 @@ nav {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 49.17px;
-    height: 32px;
+    width: 107px;
+    height: 100px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    margin: 0 24.75px;
+    padding: 0 24.75px;
     cursor: pointer;
   }
 
@@ -60,4 +60,46 @@ nav {
     margin: auto 0;
     margin-left: 30px;
   }
+}
+
+
+
+
+
+
+.indicator {
+  position: absolute;
+  bottom: -19px;
+  left: 34px;
+  width: 25px;
+  height: 36px;
+  background: #7d2ae8;
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Before - Antes */
+.indicator::before {
+  content: ""; /* Sempre usar quando utilizar o before */
+  position: absolute;
+  left: -15px;
+  bottom: 50%;
+  height: 22px;
+  width: 20px;
+  background: #ffffff;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 10px 0 #7d2ae8;
+}
+
+/* After - Depois*/
+.indicator::after {
+  content: ""; /* Sempre usar quando utilizar o before */
+  position: absolute;
+  right: -15px;
+  bottom: 50%;
+  height: 22px;
+  width: 20px;
+  background: #ffffff;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 10px 0 #7d2ae8;
 }

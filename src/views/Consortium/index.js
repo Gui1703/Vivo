@@ -9,7 +9,6 @@ import Parcel from "../../components/Parcel";
 export default function Consortium() {
   return (
     <div className="main">
-      <UpBar />
       <section>
         <div className="content">
           <h1>Consórcio do seu jeito!</h1>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles.scss";
 import Logo from "../../assets/Images/logo.png";
@@ -5,32 +6,56 @@ import TCS from "../../assets/Images/tcs.png";
 
 export default function UpBar() {
   const navigate = useNavigate();
+  const [styles, setStyles] = useState([
+    { cursor: "pointer" },
+    { cursor: "pointer" },
+    { cursor: "pointer" },
+    { cursor: "pointer" },
+    { cursor: "pointer" },
+    { cursor: "pointer" },
+    { cursor: "pointer" }
+  ]);
 
-  function navigateTo(url) {
+  useEffect(()=>{
+    navigate(``, 6);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  function navigateTo(url, pos) {
     navigate(`/${url}`);
+    let styleAux = [...styles];
+    for (let i = 0; i < styleAux.length; i++) {
+      if (i !== pos) {
+        styleAux[i] = { cursor: "pointer" };
+      } else {
+        styleAux[i] = { background: "#FF9900", color: "#FFFFFF" };
+      }
+    }
+    setStyles(styleAux);
   }
+
   return (
     <nav>
       <img className="logo" src={Logo} alt="logo-vivo" />
-      <div className="link" onClick={() => navigateTo("Auto")}>
+      <div style={styles[0]} className="link" onClick={() => navigateTo("Auto", 0)}>
         Seguro Auto
       </div>
-      <div className="link" onClick={() => navigateTo("Pet")}>
+      <div style={styles[1]} className="link" onClick={() => navigateTo("Pet", 1)}>
         Seguro Pet
       </div>
-      <div className="link" onClick={() => navigateTo("Residential")}>
+      <div style={styles[2]} className="link" onClick={() => navigateTo("Residential", 2)}>
         Seguro Residencial
       </div>
-      <div className="link" onClick={() => navigateTo("Travel")}>
+      <div style={styles[3]} className="link" onClick={() => navigateTo("Travel", 3)}>
         Seguro Viagem
       </div>
-      <div className="link" onClick={() => navigateTo("Life")}>
+      <div style={styles[4]} className="link" onClick={() => navigateTo("Life", 4)}>
         Seguro Vida
       </div>
-      <div className="link" onClick={() => navigateTo("Bail")}>
+      <div style={styles[5]} className="link" onClick={() => navigateTo("Bail", 5)}>
         Seguro Fiança
       </div>
-      <div className="link" onClick={() => navigateTo("")}>
+      <div style={styles[6]} className="link" onClick={() => navigateTo("", 6)}>
         Consórcio
       </div>
       <div className="tcs">

@@ -1,7 +1,8 @@
+import UpBar from "../../components/UpBar";
+
 export default function Life(){
     return (
         <div>
-            <h1>Life</h1>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import UpBar from './components/UpBar'
 import Consortium from "./views/Consortium";
 import Auto from "./views/Auto";
 import Bail from "./views/Bail";
@@ -11,6 +12,7 @@ import Travel from "./views/Travel";
 export default function myRoutes() {
   return (
     <Router>
+      <UpBar />
       <Routes>
         <Route path="/" element={<Consortium />} />
         <Route path="/auto" element={<Auto />} />
