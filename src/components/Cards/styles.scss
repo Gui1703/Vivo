@@ -69,3 +69,73 @@ span {
   padding-top: 5px;
   padding-bottom: 25px;
 }
+
+@media (max-width: 640px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+        margin: auto;
+    margin-left: 0px;
+    box-shadow: none;
+  }
+
+  .card-up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 15.5253px;
+    padding: 10px;
+  }
+
+  img {
+    margin: auto;
+    width: 21px;
+    height: 21px;
+  }
+
+  .name {
+    font-family: "Play";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin: auto;
+    margin-left: 5px;
+  }
+
+  .card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+  }
+
+  .rate {
+  font-family: "Open Sans";
+    font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 90%;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+margin: auto;
+margin-top: -20px;
+
+  }
+  span {
+    font-size: 20px;
+    margin-bottom: -10px;
+  }
+}
