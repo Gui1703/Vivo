@@ -5,7 +5,7 @@ import Logo from "../../assets/Images/logo.png";
 import LogoMin from "../../assets/Images/logoMin.svg";
 import TCS from "../../assets/Images/tcs.png";
 
-export default function UpBar() {
+function UpBar() {
   const navigate = useNavigate();
   const [styles, setStyles] = useState([
     { cursor: "pointer" },
@@ -102,3 +102,4 @@ export default function UpBar() {
     </div>
   );
 }
+export default UpBar;
