@@ -52,7 +52,6 @@ img {
   background: #660099;
   border-radius: 0 0 15.5253px 15.5253px;
   padding-top: 35px;
-  color: #ffffff;
 }
 .rate {
   font-family: "Open Sans";
@@ -62,12 +61,14 @@ img {
   line-height: 100%;
   text-align: center;
   letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 span {
   font-size: 35px;
   padding-top: 5px;
   padding-bottom: 28px;
+  color: #ffffff;
 }
 
 @media (max-width: 640px) {
@@ -137,5 +138,6 @@ span {
     font-size: 20px;
     margin-bottom: 0px;
     padding-bottom: 12px;
+    color: #ffffff;
   }
 }
